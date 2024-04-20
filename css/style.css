@@ -1,10 +1,157 @@
 @import "reset.css";
 
-.hidden {
-    display: none;
+* {
+    outline: none;
+}
+:root {
+    --gray: rgb(219, 219, 219);
+}
+body {
+    position: relative;
+    font-family: "Nanum Gothic", sans-serif;
+    height: 94vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#date {
+    font-size: 30px;
+    font-weight: 600;
 }
 .login-form {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.login-form input,
+.login-form button {
+    border: 1px solid white;
+    background-color: var(--gray);
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 600;
+}
+.main-title {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* background: linear-gradient(#e66465, #9198e5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    -webkit-text-stroke: 1px rgb(173, 173, 173); */
+}
+.main-title h2:nth-child(2),
+.main-title h1 {
+    font-weight: 800;
+}
+.main-title h2:nth-child(2) {
+    font-size: 100px;
+}
+.main-title h1 {
+    font-size: 40px;
+}
+.hidden {
+    display: none;
+}
+.weather-container {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+#weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 25px;
+    padding: 20px 20px;
+}
+#weather span {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+#quote {
+    color: white;
+}    
+.todo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+li, li > span {
+    font-weight: 600;
+    color: white;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+#todo-list {
+    overflow-y: scroll;
+    height: 200px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.todo-delete {
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+}
+.todo-delete:hover {
+    background-color: var(--gray);
+    color: white;
+}
+#greeting {
+    margin-bottom: 5px;
+}
+.quote-container {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+#quote {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+#quote span {
+    margin:15px 10px;
+}
+#todo-form input {
+    color: white;
+    border: 1px solid white;
+    background-color: var(--gray);
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    width: 240px;
+    margin: 10px 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 13px;
+}
+input::placeholder {
+    color: white;
+}
+#todo-form input:focus {
+    background-color: white;
+    color: var(--gray);
+    border: 1px solid var(--gray);
+}
+input:focus::-webkit-input-placeholder {
+    color: var(--gray);
+}
+
