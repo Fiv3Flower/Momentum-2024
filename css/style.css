@@ -9,7 +9,7 @@
 body {
     position: relative;
     font-family: "Nanum Gothic", sans-serif;
-    height: 94vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -39,7 +39,9 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: transparent;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
     /* background: linear-gradient(#e66465, #9198e5);
     background-clip: text;
     -webkit-background-clip: text;
